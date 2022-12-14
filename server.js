@@ -28,5 +28,3 @@ httpServer.listen(4000, () => {
     console.log('listening on port 4000')
 })
 
-console.log('Fede es el mejor')
-console.log('De verdad')
