@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">    
+        <script src="/socket.io/socket.io.js"></script>   
+        <style>
+            #mensajes{
+                margin: 20px;
+                height: 600px;
+            }
+        </style> 
+    </head>
+    <body>
+        <h1>Esto va a ser un Chat</h1>
+        <form onsubmit="return addMensaje(this)">
+            <input type="text" id="username" placeholder="Ingresa Tu nombre"><br>
+            <input type="text" id="text" placeholder="Cuentanos algo..."><br>
+            <input type="submit" value="enviar" >
+        </form>
+        <div id="mensajes" class="border border-2 border-primary rounded"></div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
