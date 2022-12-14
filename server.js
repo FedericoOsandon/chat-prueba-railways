@@ -22,9 +22,9 @@ io.on('connection', ( socket ) => {
         io.sockets.emit('mensajes-clientes', messages)
     })
 })
+const PORT = process.env.PORT || 4000
 
-
-httpServer.listen(4000, () => {
+httpServer.listen(PORT, () => {
     console.log('listening on port 4000')
 })
 
